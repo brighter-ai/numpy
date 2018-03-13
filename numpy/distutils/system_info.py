@@ -549,7 +549,7 @@ class system_info(object):
         assert isinstance(self.search_static_first, int)
 
     def parse_config_files(self):
-        self.cp.read(self.files)
+        self.cp.read(self.files, encoding="utf-8")
         if not self.cp.has_section(self.section):
             if self.section is not None:
                 self.cp.add_section(self.section)
