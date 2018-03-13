@@ -28,8 +28,7 @@ import os
 import sys
 import subprocess
 import textwrap
-
-reload(sys)  
+  
 sys.setdefaultencoding('utf8')
 
 
